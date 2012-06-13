@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>State Machine</title>
+	<link rel="stylesheet" type="text/css" href="http://www.slate.com/etc/designs/slate/css/slate-base.css" />
+	<link rel="stylesheet" type="text/css" href="http://www.slate.com/etc/designs/slate/css/boilerplate.css" />
+	<link rel="stylesheet" type="text/css" href="css/slate-nbox.css" />
+	
+	<script>
+	    document.domain = 'slate.com';
+	    SlateNextbox = {}
+        SlateNextbox.data = {
+            'headline': 'Trailer Critic: James Bond in <em>Skyfall<\/em>',
+            'subhead': 'Dummy subhead on this blog post.',
+            'url': 'http:\/\/www.slate.com\/blogs\/browbeat\/2012\/05\/21\/skyfall_trailer_sam_mendes_and_roger_deakins_give_james_bond_a_sharp_new_look.html',
+            'article_id': '205120521005',
+            'hasImage': true,    
+            'image': 'http:\/\/www.slate.com\/content\/dam\/slate\/blogs\/browbeat\/2012\/05\/21\/Skyfall_still_Craig.png.CROP.rectangle-small.png',    
+            'section': 'Brow Beat',
+            'subscribe_type': 'blog'
+        };
+	</script>
+	
+	
+	<style>
+	    a{color:black}
+	    a:hover{color:#603}	
+	</style>
+	
+</head>
+<body>
+    <div class="sl-content-wrapper">
+        <div style="background-color:lightsteelblue;width:336px;height:1500px;position:absolute;right:50px;">
+    		<div id="wapolabs_wrapperLoginStatus"></div>
+    		<div id="sl-nbox-signpost" class="sl-nbox-signpost" style="position:absolute;bottom:500px;text-align:center;font-size:2em;width:336px;">
+    		    ==== GO! ====
+    		</div>
+        </div>
+
+        <div id="sl-nbox-cntr" class="sl-nbox-cntr">
+        </div>
+        <div class="clearing"></div>
+    </div>
+
+    <script>
+        var SG_Debug = {};
+        SG_Debug.pagedebug = "";
+        var slateFlyoutData;
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!-- use lib.js to test for compat., but really only need jq.cookie & ctr -->
+    <!-- 
+    <script src="http://www.slate.com/etc/designs/slate/lib.js"></script>
+    -->
+    <script src="http://www.slate.com/etc/designs/slate/js/libs/jquery.cookie.js"></script>
+    <script src="http://www.slate.com/etc/designs/slate/js/jquery.ctr.js"></script>
+    
+    <!-- IDENTITY -->
+    <script src="http://bunsen.wapolabs.com/wapolabs/1.5.2/js/wapolabs.nojq.full.js"></script>
+    <script src="http://bunsen.wapolabs.com/identity/slate/prod/1.5.1/js/wapo_identity.js"></script>
+    <script src="js/mys-observer.js"></script>
+    <script src="js/mys-state-controller.js"></script>
+    <script src="js/sl-nbox.js"></script>
+</body>
+</html>

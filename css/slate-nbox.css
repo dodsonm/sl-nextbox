@@ -93,7 +93,7 @@
     background:#fff;
     border:solid 2px #603;
 	min-height:134px;
-	width:332px;
+	width:399px;
 }
 .sl-nboxd a, .sl-nboxd a:visited{
     color:#069;
@@ -149,7 +149,7 @@
 .sl-nboxd-body{
     float:left;
     margin:0 0 0 10px;
-    width:174px;
+    width:240px;
 }
 .sl-nboxd-hed{
     font-size:1.077em;

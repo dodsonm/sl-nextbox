@@ -28,8 +28,8 @@ SlateNextBox.prototype.init = function(d){
     //console.info(d);
     
     this.TREATMENT_A = "Dark";
-    this.TREATMENT_B = "Light";
-    this.BREAK = 20;
+    this.TREATMENT_B = "DarkNarrow";
+    this.BREAK = 50;
     this.cntr = $('#sl-nbox-cntr');
     this.sc = new  SlateNextBox.StateController();
         
@@ -39,7 +39,8 @@ SlateNextBox.prototype.init = function(d){
             parseInt(Math.random()*100), 
             {
                 expires: 90,
-                domain:'slate.com'
+                domain:'slate.com',
+                path:'/'
             }
         );
     }
@@ -54,7 +55,7 @@ SlateNextBox.prototype.init = function(d){
     this.cntr.empty();
     this.cntr.append(this.shell.html);
     var top = $(window).height() - this.cntr.height() - 50;
-    var right = -(this.cntr.width())
+    var right = -(this.cntr.width());
     this.cntr.attr('style','right:' + right + 'px;top:' + top + 'px;');
     this.cntr.css({opacity:0});
     
@@ -202,6 +203,29 @@ SlateNextBoxShell.Dark = function(){
     this.illoCntr.addClass('sl-nboxd-illo-cntr');
     this.illo.addClass('sl-nboxd-illo');
     this.body.addClass('sl-nboxd-body');
+    this.hed.addClass('sl-nboxd-hed');
+    this.dek.addClass('sl-nboxd-dek');
+    this.bot.addClass('sl-nboxd-bot');
+
+    this.nbox.attr('track-module','nextbox-a');
+}
+SlateNextBoxShell.DarkNarrow = function(){
+    this.nbox.addClass('sl-nboxd');
+    this.nbox.css({
+        'width':'332px'
+    });
+    this.top.addClass('sl-nboxd-top');
+    this.mid.addClass('sl-nboxd-mid');
+    this.mbar.addClass('sl-nboxd-mbar');
+    this.leader.addClass('sl-nboxd-leader');
+    this.close.addClass('sl-nboxd-close');
+    this.main.addClass('sl-nboxd-main');
+    this.illoCntr.addClass('sl-nboxd-illo-cntr');
+    this.illo.addClass('sl-nboxd-illo');
+    this.body.addClass('sl-nboxd-body');
+    this.body.css({
+        'width':'174px'
+    });
     this.hed.addClass('sl-nboxd-hed');
     this.dek.addClass('sl-nboxd-dek');
     this.bot.addClass('sl-nboxd-bot');
